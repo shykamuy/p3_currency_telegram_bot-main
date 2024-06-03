@@ -1,0 +1,24 @@
+telegram:
+  bot:
+#    не вписывайте данные, так как можете отправить в публичный репозиторий
+#    используйте переменные среды для установки значений
+    username: shykamuy_crypto_bot
+    token: 7008286706:AAHP2GeFz6erS0khJER4pCPAbxjcu_v6z70
+    notify:
+      delay:
+        value: 10
+        unit: MINUTES
+check-delay: "*/60 */2 * * * *"
+binance:
+  api:
+    getPrice: https://api.binance.com/api/v3/avgPrice?symbol=BTCUSDT
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
+      show-sql: true
